@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
                       double totalSalesValue = 0;
                       if (salesSnapshot.hasData) {
                         for (var doc in salesSnapshot.data!.docs) {
-                          totalSalesValue += (doc['totalAmount'] as num).toDouble();
+                          totalSalesValue += (doc['total_price'] as num).toDouble();
                         }
                       }
 
